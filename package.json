@@ -13,5 +13,11 @@
     "url": "https://github.com/shuerry/fake-mon.git"
   },
   "author": "Stephanie, Sherry, Motto",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "nodemon": "^3.0.3"
+  }
 }
