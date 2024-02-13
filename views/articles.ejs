@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="public/css/style.css" rel = "stylesheet" type="text/css"/>
+    <!-- <link href="public/css/style.css" rel = "styleshett" type="text/css"/>-->
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Articles</h1>
+    <h2>Submit Article</h2>
+    <form>
+      <input type = "text"/>
+      <input type = "button" value = "Button!"/>
+      <input type = "date"/>
+    </form>
+
+    <% for(let i = 0; i < articles.length; i++) { %>
+    <div class="article">
+      <h3> <%= articles[i].title %> </h3>
+      <p> <%= articles[i].author %></p>
+      <p> <%= articles[i].text %></p>
+      <p> <%= articles[i].date %></p>
+    </div>
+    <% } %>
+  </body>
+</html>
