@@ -7,4 +7,11 @@ const pokemonSchema = new Schema({
   type: { type: String, required: true },
   owner: { type: String, required: true },
   description: { type: String, required: true },
+}, {
+  collection: 'pokemons'
 });
+
+const db = mongoose.connection.useDb("pokemons");
+const Pokemon = db.model("Pokemon", pokemonSchema);
+
+export default Pokemon;
