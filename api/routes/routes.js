@@ -8,6 +8,8 @@ router.route("/").get(PageController.getHomePage);
 
 router.route("/articles").get(PageController.getArticles).post(PageController.postArticle);
 
+router.route("/pokemons").get(PageController.getPokemons).post(PageController.postPokemon);
+
 router.route("/profile").get(PageController.getProfile);
 
 router.route("/public/css/:style.css").get((req, res) => {

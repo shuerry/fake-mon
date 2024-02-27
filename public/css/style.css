@@ -3,6 +3,18 @@
     background-color: black;
 }
 
+.pokemon {
+    color:black;
+    background-color: yellow;
+}
+
+#pokemon1 {
+    background-color: red;
+}
+
+#pokemon2 {
+    background-color: red;
+}
 #article1 {
     background-color: black;
 }

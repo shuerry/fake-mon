@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="public/css/style.css" rel = "stylesheet" type="text/css"/>
+    <!-- <link href="public/css/style.css" rel = "styleshett" type="text/css"/>-->
+    <title>Pokemons</title>
+  </head>
+  <body>
+    <h1>Pokémon Collections</h1>
+    <h2>Create your own Pokémon</h2>
+    <form method = "POST">
+      <label for= "name">Name</label>
+      <input type = "text" name = "name" />
+      <br />
+      <label for= "type">Type</label>
+      <input type = "text" name = "type" />
+      <br />
+      <label for= "owner">Owner</label>
+      <input type = "text" name = "owner" />
+      <br />
+      <label for= "description">Description</label>
+      <input type = "text" name = "description" />
+      <br />
+      <input type = "submit" value = "Submit">
+    </form>
+
+    <hr />
+
+    <% for(let i = 0; i < pokemons.length; i++) { %>
+    <div class="pokemon">
+      <h3> <%= pokemons[i].name %> </h3>
+      <p> <%= pokemons[i].type %></p>
+      <p> <%= pokemons[i].owner %></p>
+      <p> <%= pokemons[i].description %></p>
+    </div>
+    <% } %> 
+  </body>
+</html>
