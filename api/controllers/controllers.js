@@ -16,7 +16,7 @@ class PageController {
         res.sendFile(path.resolve() + "/public/html/profile.html");
     }
 
-    static async postArticle() {
+    static async postArticle(req, res) {
         const articleToPost = {
             title : req.body.title,
             author : req.body.author,

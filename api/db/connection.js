@@ -32,8 +32,8 @@ export default class Connection {
 
             //Destructure variables
             const { MONGO_USERNAME, MONGO_PASSWORD, MONGO_CLUSTER } = process.env;
-            const DATABASE_URL = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}
-                @${MONGO_PASSWORD}@${MONGO_CLUSTER}.xtdufxk.mongodb.net/?retryWrites=true&w=majority`;
+            const DATABASE_URL = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_CLUSTER}.asztd1w.mongodb.net/
+            `;
 
             //Mongoose connect to the database.
             mongoose.connect(
